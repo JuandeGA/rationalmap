@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rational Map Trial Mini-Website. Rational Map, the productivity automation tool">
+    <meta name="author" content="Rational Map">
+
+    <title>Trial - Rational Map - The Productivity Automation Tool</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet" title="rationalmap-style">
+    <!-- Rational Map CSS -->
+    <link href="css/rationalmap.css" rel="stylesheet" title="rationalmap-style">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <!--<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#page-top"><img src="img/logo_rationalmap_sm.png" alt="RationalMap logo"></a>
+            </div>--->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <!--<li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#rationalmap">Rational Map</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#trial">Trial</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#benefits">Benefits</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#references">References</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>-->
+            <!-- /.navbar-collapse -->
+        <!--</div>
+        <!-- /.container -->
+    <!--</nav>-->
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <!--<div class="container">-->
+                <div class="row">
+                    <h1>WELCOME!</h1>
+                    <h2>YOU'RE ABOUT TO TRY RATIONAL MAP</h2>
+                    <div class="col-md-8 col-md-offset-2">
+                        Please, go ahead and check how to <br/> turn your emails into business intelligence
+                    </div>
+                </div>
+            <form action="trial_page1.html" method="post">
+                <button class="btn" type="submit">Let's do it</button>
+            </form>
+            <!--</div>-->
+        </div>
+    </header>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+        <div class="container">
+            <h2>First of all, we need to know a couple of things about you</h2>
+            <div class="contact-form">
+                <form enctype="multipart/form-data" action="sendmail_contact.php" method="POST">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>Select your sector of activity</td>
+                            <td>
+                                <select name="sector">
+                                    <option value="">-- Select one --</option>
+                                    <option value="aeronautic">Aeronautic industries</option>
+                                    <option value="agriculture">Agriculture</option>
+                                    <option value="audiovisual">Audiovisual and media</option>
+                                    <option value="automotive">Automotive industry</option>
+                                    <option value="biotechnology">Biotechnology</option>
+                                    <option value="business">Business-related services</option>
+                                    <option value="chemicals">Chemicals</option>
+                                    <option value="communications">Communications</option>
+                                    <option value="construction">Construction</option>
+                                    <option value="cosmetics">Cosmetics</option>
+                                    <option value="culture">Culture</option>
+                                    <option value="defence">Defence industries</option>
+                                    <option value="electrical">Electrical engineering</option>
+                                    <option value="energy">Energy</option>
+                                    <option value="financial">Financial services</option>
+                                    <option value="fisheries">Fisheries</option>
+                                    <option value="fishing">Fishing</option>
+                                    <option value="food">Food</option>
+                                    <option value="food_safety">Food safety</option>
+                                    <option value="footwear">Footwear</option>
+                                    <option value="forest">Forest-based industries</option>
+                                    <option value="furniture">Furniture</option>
+                                    <option value="gas">Gas appliances</option>
+                                    <option value="inf_society">Information Society sectors</option>
+                                    <option value="leather">Leather</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="maritime">Maritime industries</option>
+                                    <option value="measuring">Measuring instruments</option>
+                                    <option value="mechanical_eng">Mechanical engineering</option>
+                                    <option value="media">Media in the Single Market</option>
+                                    <option value="medical_devs">Medical devices</option>
+                                    <option value="mining">Mining, metals and minerals</option>
+                                    <option value="pharmaceuticals">Pharmaceuticals</option>
+                                    <option value="pre_packed">Pre-packed products</option>
+                                    <option value="pressure">Pressure equipment</option>
+                                    <option value="radio">Radio and telecommunications terminal equipment</option>
+                                    <option value="raw">Raw materials</option>
+                                    <option value="retail">Retail services</option>
+                                    <option value="rural">Rural activities</option>
+                                    <option value="security">Security</option>
+                                    <option value="services">Services</option>
+                                    <option value="soc_economy">Social economy</option>
+                                    <option value="space">Space</option>
+                                    <option value="textil">Textiles and clothing</option>
+                                    <option value="tourism">Tourism</option>
+                                    <option value="toys">Toys</option>
+                                    <option value="transport">Transport</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Select your rol or area in the company</td>
+                            <td>
+                                <select name="area">
+                                    <option value="">-- Select one --</option>
+                                    <option value="administrative">Administrative</option>
+                                    <option value="chief">CEO / CIO / CTO / CFO</option>
+                                    <option value="financial">Financial</option>
+                                    <option value="hhrr">Human Resources</option>
+                                    <option value="mainteinance">Mainteinance</option>
+                                    <option value="management">Management</option>
+                                    <option value="product">Product</option>
+                                    <option value="research">Research &amp; Development</option>
+                                    <option value="support">Support / Customer Care</option>
+                                    <option value="sales">Sales</option>
+                                    <option value="systems">Systems / IT</option>
+                                    <option value="technical">Technical</option>                         
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="accept_terms" value="ok">
+                            </td>
+                            <td>I agree with the <a href="">terms and conditions</a> of this trial</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <input class="btn" type="submit" name="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank you Section -->
+    <section id="thanks" class="content-section text-center">
+    
+    </section>
+    
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+    <script src="js/carousel.js"></script>
+
+</body>
+
+</html>

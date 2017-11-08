@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rational Map Trila Mini-Website. Rational Map, the productivity automation tool">
+    <meta name="author" content="Rational Map">
+
+    <title>Trial - Rational Map - The Productivity Automation Tool</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="./css/grayscale.min.css" rel="stylesheet" title="rationalmap-style">
+    <!-- Rational Map CSS -->
+    <link href="./css/rationalmap.css" rel="stylesheet" title="rationalmap-style">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<section id="contact" class="content-section text-center">
+        <div class="container">
+            <h2>First of all, we need to know a few things about you</h2>
+            <div class="contact-form">
+                <form enctype="multipart/form-data" action="./trial_page3.html" method="POST">
+                    <table>
+                        <tr>
+                            <td>First name (*)</td>
+                            <td><input id="first_name" type="text" required></td>
+                        </tr>
+                        <tr>
+                            <td>Last name</td>
+                            <td><input id="last_name" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>This email account is for</td>
+                            <td><select name="use" required>
+                                    <option value="">-- Select one --</option>
+                                    <option value="1">Personal</option>
+                                    <option value="2">Professional (Freelance)</option>
+                                    <option value="3">Professional (Enterprise)</option>                       
+                                </select>
+                            </td>
+                            <td>use</td>
+                        </tr>
+                        <tr>
+                            <td>Please, select your preferred language</td>
+                            <td><select name="language">
+                                    <option value="en">English</option>
+                                    <option value="es">Spanish</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select your timezone</td>
+                            <td><select name="timezone" id="timezone">
+                                    <option value="">-- Select one --</option>
+                                    <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
+                                    <option value="-11.0">(GMT -11:00) Midway Island, Samoa</option>
+                                    <option value="-10.0">(GMT -10:00) Hawaii</option>
+                                    <option value="-9.0">(GMT -9:00) Alaska</option>
+                                    <option value="-8.0">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                                    <option value="-7.0">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                                    <option value="-6.0">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                                    <option value="-5.0">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                                    <option value="-4.0">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                                    <option value="-3.5">(GMT -3:30) Newfoundland</option>
+                                    <option value="-3.0">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                                    <option value="-2.0">(GMT -2:00) Mid-Atlantic</option>
+                                    <option value="-1.0">(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+                                    <option value="0.0">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                                    <option value="1.0">(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+                                    <option value="2.0">(GMT +2:00) Kaliningrad, South Africa</option>
+                                    <option value="3.0">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                                    <option value="3.5">(GMT +3:30) Tehran</option>
+                                    <option value="4.0">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                                    <option value="4.5">(GMT +4:30) Kabul</option>
+                                    <option value="5.0">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                                    <option value="5.5">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                                    <option value="5.75">(GMT +5:45) Kathmandu</option>
+                                    <option value="6.0">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                                    <option value="7.0">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                                    <option value="8.0">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                                    <option value="9.0">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                                    <option value="9.5">(GMT +9:30) Adelaide, Darwin</option>
+                                    <option value="10.0">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                                    <option value="11.0">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                                    <option value="12.0">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input class="btn" type="submit" name="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type='text/javascript'>
+
+        function validate(){
+
+        /*Validaremos también el checkbox del formulario. Todos los 
+        checkbox tienen una propiedad llamada checked. Entonces 
+        hacemos el if y decimos que si nuestro checkbox NO está 
+        checked, estará mal.*/
+        if(!document.getElementById('accept_terms').checked){
+            correct = false;
+        }
+        else {
+            correct = true;
+        }
+
+        /*Por último, y como aviso para el usuario, si no está todo bién, osea, si la variable 
+        todo_correcto ha devuelto false al menos una vez, generaremos una alerta advirtiendo 
+        al usuario de que algunos datos ingresados no son los que esperamos.*/
+        if(!correct){
+            alert('Please, you must validate terms & conditions before going on');
+        }
+
+        return correct;
+        }
+    
+    </script>
+    
+        <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+    <script src="js/carousel.js"></script>
+
+</body>
+
+</html>

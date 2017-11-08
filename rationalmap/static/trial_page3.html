@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rational Map Trila Mini-Website. Rational Map, the productivity automation tool">
+    <meta name="author" content="Rational Map">
+
+    <title>Trial - Rational Map - The Productivity Automation Tool</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="./css/grayscale.min.css" rel="stylesheet" title="rationalmap-style">
+    <!-- Rational Map CSS -->
+    <link href="./css/rationalmap.css" rel="stylesheet" title="rationalmap-style">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<section id="contact" class="content-section text-center">
+        <div class="container">
+            <h2>Please, tell us something about your work</h2>
+            <div class="contact-form">
+                <form enctype="multipart/form-data" onsubmit='return validate()' action="./trial_page5.html" method="POST">
+                    <table>
+                        <tr>
+<!--                            <td>Select your sector of activity</td>
+                            <td>
+                                <select name="sector">
+                                    <option value="">-- Select one --</option>
+                                    <option value="aeronautic">Aeronautic industries</option>
+                                    <option value="agriculture">Agriculture</option>
+                                    <option value="audiovisual">Audiovisual and media</option>
+                                    <option value="automotive">Automotive industry</option>
+                                    <option value="biotechnology">Biotechnology</option>
+                                    <option value="business">Business-related services</option>
+                                    <option value="chemicals">Chemicals</option>
+                                    <option value="communications">Communications</option>
+                                    <option value="construction">Construction</option>
+                                    <option value="cosmetics">Cosmetics</option>
+                                    <option value="culture">Culture</option>
+                                    <option value="defence">Defence industries</option>
+                                    <option value="electrical">Electrical engineering</option>
+                                    <option value="energy">Energy</option>
+                                    <option value="financial">Financial services</option>
+                                    <option value="fisheries">Fisheries</option>
+                                    <option value="fishing">Fishing</option>
+                                    <option value="food">Food</option>
+                                    <option value="food_safety">Food safety</option>
+                                    <option value="footwear">Footwear</option>
+                                    <option value="forest">Forest-based industries</option>
+                                    <option value="furniture">Furniture</option>
+                                    <option value="gas">Gas appliances</option>
+                                    <option value="inf_society">Information Society sectors</option>
+                                    <option value="leather">Leather</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="maritime">Maritime industries</option>
+                                    <option value="measuring">Measuring instruments</option>
+                                    <option value="mechanical_eng">Mechanical engineering</option>
+                                    <option value="media">Media in the Single Market</option>
+                                    <option value="medical_devs">Medical devices</option>
+                                    <option value="mining">Mining, metals and minerals</option>
+                                    <option value="pharmaceuticals">Pharmaceuticals</option>
+                                    <option value="pre_packed">Pre-packed products</option>
+                                    <option value="pressure">Pressure equipment</option>
+                                    <option value="radio">Radio and telecommunications terminal equipment</option>
+                                    <option value="raw">Raw materials</option>
+                                    <option value="retail">Retail services</option>
+                                    <option value="rural">Rural activities</option>
+                                    <option value="security">Security</option>
+                                    <option value="services">Services</option>
+                                    <option value="soc_economy">Social economy</option>
+                                    <option value="space">Space</option>
+                                    <option value="textil">Textiles and clothing</option>
+                                    <option value="tourism">Tourism</option>
+                                    <option value="toys">Toys</option>
+                                    <option value="transport">Transport</option>
+                                </select>
+                            </td> -->
+                            <td></td>
+                                <td>Select your working day (*)</td>
+                            <td>
+                                <select name="working_day" required>
+                                    <option value="">-- Select one --</option>
+                                    <option value="1">Fulltime</option>
+                                    <option value="2">Part-time</option>                         
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Select your rol (*)</td>
+                            <td>
+                                <select name="rol" required>
+                                    <option value="">-- Select one --</option>
+                                    <option value="1">CEO</option>
+                                    <option value="2">Senior Management</option>
+                                    <option value="3">Sales</option>
+                                    <option value="4">Administration, Financial, Operations</option>
+                                    <option value="5">Marketing, PR</option>
+                                    <option value="6">Consulting, Project Management</option>
+                                    <option value="7">Support, Customer Care</option>                                   
+                                    <option value="8">Engineering, Systems, R&amp;D</option>
+                                    <option value="9">Training</option>                         
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="accept_terms" value="ok">
+                            </td>
+                            <td>I agree with the <a href="">terms and conditions</a> of this trial</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <input class="btn" type="submit" name="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type='text/javascript'>
+
+        function validate(){
+
+        /*Validaremos también el checkbox del formulario. Todos los 
+        checkbox tienen una propiedad llamada checked. Entonces 
+        hacemos el if y decimos que si nuestro checkbox NO está 
+        checked, estará mal.*/
+        if(!document.getElementById('accept_terms').checked){
+            correct = false;
+        }
+        else {
+            correct = true;
+        }
+
+        /*Por último, y como aviso para el usuario, si no está todo bién, osea, si la variable 
+        todo_correcto ha devuelto false al menos una vez, generaremos una alerta advirtiendo 
+        al usuario de que algunos datos ingresados no son los que esperamos.*/
+        if(!correct){
+            alert('Please, you must validate terms & conditions before going on');
+        }
+
+        return correct;
+        }
+    
+    </script>
+    
+        <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+    <script src="js/carousel.js"></script>
+
+</body>
+
+</html>
