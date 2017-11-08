@@ -1,0 +1,215 @@
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+.intro h1 {
+    font-size: 130px;
+}
+
+.intro h2 {
+    font-size: 50px;
+}
+
+.intro {
+    font-size: 30px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600
+}
+
+
+.intro .btn {
+    margin-right: auto;
+    margin-top: 100px;
+    width: 150px;
+    font-weight:200;
+    border: 2px solid #42DCA3;
+    background-color: transparent;
+    color: #42DCA3;
+    -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;border-radius:0
+}
+
+.intro .btn:hover {
+    margin-right: auto;
+    margin-top: 100px;
+    width: 150px;
+    font-weight:200;
+    border: 2px solid #42DCA3;
+    background-color: #42DCA3;
+    color: #FFFFFF;
+    -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;border-radius:0
+}
+
+@media (min-width:768px){
+    .navbar-custom{
+        padding:20px 0;
+        border-bottom:none;
+        letter-spacing:1px;
+        background:0 0;
+        -webkit-transition:background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition:background .5s ease-in-out,padding .5s ease-in-out;
+        transition:background .5s ease-in-out,padding .5s ease-in-out}
+    .navbar-custom.top-nav-collapse{
+        padding:0;
+        background:#fff;
+        border-bottom:1px solid rgba(255,229,255,.3)
+    }
+}
+
+.intro {
+    background: url(http://rationalmap.kincubator.es/img/background11.jpg);
+}
+
+.content-section {
+    height: 100%;
+}
+
+.content-section p {
+    font-family: "Helvetiva Neue", "Helvetica", "Arial", sans-serif;
+}
+
+#rationalmap p {
+    text-align: justify;
+}
+
+@media (min-width:767px) {
+    .content-section {
+        padding-top:250px;
+    }
+    .benefits-section {
+        padding:100px 0;
+    }
+    #map {
+        height:400px;
+        margin-top:250px;
+    }
+}
+
+#references.container {
+    padding-top: 200px
+}
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+#about .content-section {
+    padding-top: 50px;
+}
+
+@media (min-width:767px){
+    #about .content-section {
+        padding-top:50px;
+    }
+}
+
+#about p {
+    margin: 0 0 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#contact {
+    background-image: url(http://rationalmap.kincubator.es/img/background10.jpg);
+    background-size: 100%
+}
+
+#contact h2 {
+    color: #fff;
+    text-transform: none
+}
+
+.contact-form table {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-form table td {
+    font-family: "Helvetiva Neue", "Helvetica", "Arial", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 10px 10px 0px;
+    text-align: left
+}
+
+.contact-form input {
+    border: 0px;
+    /* border-bottom: 2px solid #7d7d7d; */
+    background-color: #fff;
+    width: auto
+}
+
+.contact-form select {
+    border: 0px;
+    /* border-left: 2px solid #7d7d7d; */
+    background-color: #fff;
+    color: #000
+    
+}
+
+.contact-form .btn {
+    margin-right: auto;
+    margin-top: 100px;
+    width: 150px;
+    font-weight:200;
+    border: 2px solid #42DCA3;
+    background-color: transparent;
+    color: #42DCA3;
+    -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;border-radius:0
+}
+
+.contact-form .btn:hover {
+    margin-right: auto;
+    margin-top: 100px;
+    width: 150px;
+    font-weight:200;
+    border: 2px solid #42DCA3;
+    background-color: #42DCA3;
+    color: #FFFFFF;
+    -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;border-radius:0
+}
+
+#thanks {
+    background: url(http://rationalmap.kincubator.es/img/background12b.png);
+    background-size: 
+}
